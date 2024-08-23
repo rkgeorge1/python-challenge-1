@@ -225,13 +225,12 @@ for item in order_list:
    
     num_item_spaces = 36 - len(itemname) - 8
     item_spaces = " " * num_item_spaces
-
+    price_spaces = " " * 8
     # 9. Create space strings
     spaces_between = " " * num_item_spaces
- 
 
     # 10. Print the item name, price, and quantity
-    print(f"{itemname}{spaces_between} {price}{spaces_between} {quantity}")
+    print(f"{itemname}{spaces_between} {price}{price_spaces} {quantity}")
 
 # 11. Calculate the cost of the order using list comprehension
 # Multiply the price by quantity for each item in the order list, then sum()
